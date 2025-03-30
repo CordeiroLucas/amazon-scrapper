@@ -50,5 +50,5 @@ app.get(DIR, async (req, res) => {
 });
 
 app.listen(PORT, () => {
-	console.log(`Server running at ${URL}${DIR}?keyword=laptop`); // =================== log
+	console.log(`Server running at ${URL}${DIR}?keyword=`); // =================== log
 });

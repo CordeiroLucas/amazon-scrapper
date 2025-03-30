@@ -101,7 +101,12 @@ button:hover {
   border-radius: 8px;
   background-color: #1a1a1a;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   cursor: pointer;
+
+  max-height: fit-content;
+  flex-wrap: wrap;
+  text-align: justify;
 }
 
 .product:hover {
@@ -116,6 +121,7 @@ button:hover {
 .product img {
   width: 100%;
   max-width: 250px;
+  max-height: 250px;
   border: 1px solid transparent;
   border-radius: 28px;
 }
