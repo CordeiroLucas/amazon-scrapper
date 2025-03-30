@@ -2,6 +2,7 @@
 node_modules
 *.lock
 *-lock.json
+*.json
 
 # output
 out
