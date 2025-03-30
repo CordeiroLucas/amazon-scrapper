@@ -31,6 +31,12 @@ bun run server.ts
 cd frontend
 bun run dev
 ```
+Having issues? The node version might be outdated
+use 
+```bash
+node -v
+```
+If the version is lower then 16, update the node on [NodeJs](https://nodejs.org/en/download)
 
 ### The app will execute on http://localhost:5173/
 
