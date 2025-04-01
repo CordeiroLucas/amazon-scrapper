@@ -1,43 +1,52 @@
-# Amazon Scrapper
+# Amazon Scraper
 
-## First Steps
+## 📌 Overview  
+This project is a web scraper for Amazon, built using Bun, Express, Axios, and JSDOM. It extracts product information efficiently.
 
-### Installing Bun
-Windows
+## 🚀 Getting Started  
+
+### 1️⃣ Install Bun  
+#### **Windows**  
 ```powershell
 powershell -c "irm bun.sh/install.ps1 | iex"
 ```
-Linux/Mac
+####  **Linux/macOS**
 ```bash
 curl -fsSL https://bun.sh/install | bash
 ```
-- Reopen the VSCode
+After installation, restart VS Code.
 
-### Installing dependencies:
-On project folder
+### 2️⃣ Install dependencies
+Navigate to the project folder and run:
 ```bash
 bun install express axios jsdom
 ```
 
-Any Issue? Visit <a href="https://bun.sh">Bun</a> Website
-## To run:
+If you encounter issues, check the <a href="https://bun.sh">Bun Documentation</a>.
 
-### Run the server
+### 3️⃣ Running the Project
+#### **Start the Server**
 ```bash
 bun run server.ts
 ```
-### On another terminal run:
+
+#### **Start the Frontend**
+Open a new terminal run:
 ```bash
 cd frontend
 bun install
 bun run dev
 ```
-Having issues? The node version might be outdated
-use 
+
+## 🛠 Troubleshooting
+
+- If the app doesn't run, check your Node.js version
 ```bash
 node -v
 ```
-If the version is lower then 16, update the node on [NodeJs](https://nodejs.org/en/download)
+If it's **lower then 16**, update NodeJs [here](https://nodejs.org/en/download).
 
-### The app will execute on [LocalHost:5173](http://localhost:5173/)
 
+## 🌍 Accesssing the App
+Once running, the application will be available at:
+👉 [localHost:5173](http://localhost:5173/)
