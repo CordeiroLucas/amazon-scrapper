@@ -14,13 +14,17 @@ document.getElementById('search').addEventListener('click', async () => {
       
       console.log('Response:', response.status); // Log
 
-      const resultsDiv = document.getElementById('results'); // Get the results div
+      const resultsDiv = document.getElementById('result-list'); // Get the results div
       resultsDiv.innerHTML = data.map(product => `
-        <div class="product">
-          <img src="${product.image}" alt="${product.title}"/>
-          <h3>${product.title}</h3>
-          <p>${product.rating || "No Rating"} - ${product.reviews || "0"} reviews</p>
-        </div>
+        <a class="product" href="https://www.amazon.com.br${product.link}" target="_blank">
+          <div class="img-container">
+            <img src="${product.image}" alt="${product.title}"/>
+          </div>
+          <div class="section">
+            <h3>${product.title}</h3>
+            <p>${product.rating || "No Rating"} - ${product.reviews || "0"} reviews</p>
+          </div>
+        </a>
       `).join(''); // Map the products and create HTML for each, then join everything into a string and insert it into the div
     }
     catch (error) {
