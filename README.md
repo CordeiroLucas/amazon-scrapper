@@ -38,5 +38,5 @@ node -v
 ```
 If the version is lower then 16, update the node on [NodeJs](https://nodejs.org/en/download)
 
-### The app will execute on http://localhost:5173/
+### The app will execute on [LocalHost:5173](http://localhost:5173/)
 
