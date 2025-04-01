@@ -18,11 +18,9 @@ app.use((req, res, next) => {
 app.get(DIR, async (req, res) => {
 	const keyword = req.query.keyword as string;
 	if (!keyword) { // checks if the 'keyword' parameter was passed
-		// console.log("Parameter 'keyword' is required"); // =================== log
 		res.status(400).json({ error: "Parameter 'keyword' is required" });
 	}
 	else {
-
 		const url = `https://www.amazon.com.br/s?k=${encodeURIComponent(keyword)}`; // Amazon URL with the passed 'keyword'
 		const response = await axios.get(url, { // makes a GET request to the Amazon URL
 			headers: {
@@ -39,10 +37,12 @@ app.get(DIR, async (req, res) => {
 			const reviews = product.querySelector(".a-size-small .a-link-normal")?.textContent?.trim();
 			const image = product.querySelector(".s-image")?.getAttribute("src");
 
+			const link = product.querySelector(".a-link-normal")?.getAttribute("href");
+
 			// returns the product data if the title exists (to avoid products without a title)
 			if (title) {
 				// console.log({ title, rating, reviews, image }); // =================== log
-				return { title, rating, reviews, image };
+				return { title, rating, reviews, image, link};
 			}
 		}).filter(Boolean); // filters out products that are 'undefined'
 		res.json(products); // returns the found products
