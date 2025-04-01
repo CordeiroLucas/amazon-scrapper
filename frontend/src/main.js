@@ -16,7 +16,7 @@ document.getElementById('search').addEventListener('click', async () => {
 
       const resultsDiv = document.getElementById('result-list'); // Get the results div
       resultsDiv.innerHTML = data.map(product => `
-        <a class="product" href="https://www.amazon.com.br${product.link}" target="_blank">
+        <a class="product" href="https://www.amazon.com${product.link}" target="_blank">
           <div class="img-container">
             <img src="${product.image}" alt="${product.title}"/>
           </div>
