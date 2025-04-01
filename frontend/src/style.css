@@ -143,30 +143,6 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* ----------------------- */
-/* 
-.puis-padding-left-small {
-  padding-left: 8px;
-}
-
-.puis-padding-right-small {
-  padding-right: 8px;
-}
-
-.a-spacing-base {
-  margin-bottom: 12px;
-}
-
-.aok-relative {
-  position: relative;
-}
-
-.s-text-center {
-  text-align: center;
-} */
-
 /* ----------------------- */
 
 @media (prefers-color-scheme: light) {
