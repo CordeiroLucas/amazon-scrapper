@@ -29,6 +29,7 @@ bun run server.ts
 ### On another terminal run:
 ```bash
 cd frontend
+bun install
 bun run dev
 ```
 Having issues? The node version might be outdated
